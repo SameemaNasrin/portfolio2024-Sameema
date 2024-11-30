@@ -1,0 +1,25 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 3.2fr;
+  grid-template-rows: 1fr;
+  min-height: 100%;
+}
+
+app-personal-info-section {
+  padding: var(--padding);
+}
+
+.home-container-dark-theme {
+  background-color: var(--dark-mode-main-bg-color);
+}
+
+.home-container-light-theme {
+  background-color: var(--light-mode-main-bg-color);
+}
+
+@media screen and (max-width: 900px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

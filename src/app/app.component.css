@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --dark-mode-main-bg-color: #0c0c0c;
+  --dark-mode-bg-color: #171717;
+  --dark-mode-bg-color-opacity12: #1717171f;
+  --dark-mode-border-color: #282828;
+  --dark-mode-project-card-color: #19191e;
+  --dark-mode-project-card-hover-color: #000000b2;
+  --dark-mode-highlight-font-color: #dddddd;
+  --dark-mode-dull-font-color: #767680;
+  --dark-mode-logo-color: #ffffff;
+
+  --light-mode-main-bg-color: #f2fcff;
+  --light-mode-bg-color: #ffffff;
+  --light-mode-bg-color-opacity12: #ffffff00;
+  --light-mode-border-color: #e1e2e4;
+  --light-mode-project-card-color: #ffffff;
+  --light-mode-project-card-hover-color: #ffffffb2;
+  --light-mode-highlight-font-color: #171717;
+  --light-mode-dull-font-color: #767680;
+  --light-mode-white-font-color: #ffffff;
+  --light-mode-logo-color: #4f4e4e;
+
+  --margin: 0.5rem;
+  --padding: 0.5rem;
+  --border-radius: 8px;
+  --link-hover-color: #007aff;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

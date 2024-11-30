@@ -1,0 +1,190 @@
+<mat-dialog-content class="mat-typography">
+  <div class="header-section">
+    <div
+      class="about-block"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-1, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p
+        [ngClass]="
+    isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+  "
+      >
+        “As a digital artist, I have been bringing a splash of color to the
+        internet for years through my illustrations and designs.
+        <br /><br />
+        I assist brands in developing their visual identity and design language
+        to make their products more appealing and accessible.
+        <br /><br />
+        Currently, I am building design tools and resources &#64;overlayz. In my
+        spare time, “
+      </p>
+    </div>
+    <div class="profile-block">
+      <img
+        src="assets/ProfilePicModal.svg"
+        alt="profile-pic"
+        class="profile-pic"
+      />
+    </div>
+    <div
+      class="exp-address-block"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-2, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p>
+        <span
+          class="year"
+          [ngClass]="
+    isDarkTheme ? 'dark-mode-bright-font-color big-text' : 'light-mode-bright-font-color big-text'
+  "
+          >5</span
+        >
+        <span
+          class="exp"
+          [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+      "
+          >yr exp</span
+        >
+      </p>
+      <p class="contry-state-p">
+        <span
+          class="country"
+          [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+      "
+          >Kolkata</span
+        ><br />
+        <span
+          class="state"
+          [ngClass]="
+    isDarkTheme ? 'dark-mode-bright-font-color big-text' : 'light-mode-bright-font-color big-text'
+  "
+          >INDIA</span
+        >
+      </p>
+    </div>
+  </div>
+  <div class="hello-container">
+    <img src="assets/hello.gif" alt="hello" class="hello">
+  </div>
+  <div class="about-section">
+    <div
+      class="tech-stack"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-3, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p
+        class="heading"
+        [ngClass]="
+      isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+    "
+      >
+        MY TECH STACK
+      </p>
+      <div class="tech-stack-logo">
+        @for(logo of skillsLogosSrc; track logo){
+        <img [src]="logo" alt="logo" class="skills-logo" />
+        }
+      </div>
+    </div>
+    <div
+      class="contact-info"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-4, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p
+        class="heading"
+        [ngClass]="
+      isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+    "
+      >
+        CONTACT
+      </p>
+      <div class="contacts">
+        <div class="mail">
+          <img src="assets/mail-icon.svg" alt="mail" />
+          <p
+            [ngClass]="
+          isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+        "
+          >
+            sameemanasrin23&#64;gmail.com
+          </p>
+        </div>
+        <div class="phone">
+          <img src="assets/phone-icon.svg" alt="phone" />
+          <p
+            [ngClass]="
+          isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+        "
+          >
+            +91-8918468608
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="about-me-info"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-5, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p
+        class="heading"
+        [ngClass]="
+      isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+    "
+      >
+        LITTLE ABOUT ME
+      </p>
+      <p
+        class="little-about-me"
+        [ngClass]="
+      isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+    "
+      >
+        Product designer transitioned career path in 2020 from banking to
+        technology With 3 years of hands-on UI-UX design experience, I ve
+        collaborated effectively, delivering visually appealing designs. Having
+        worked in agile teams, I comprehend the significance of product metrics,
+        ensuring end-to-end project ownership.
+      </p>
+    </div>
+
+    <div
+      class="experience-info"
+      [ngStyle]="{'background-color': isDarkTheme ? 'var(--dark-mode-modal-bg-color-6, #2c3a3c)' : 'var(--light-mode-modal-bg-color)'}"
+    >
+      <p
+        class="heading"
+        [ngClass]="
+      isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+    "
+      >
+        EXPERIENCE
+      </p>
+
+      <div class="experiences">
+        @for(exp of experienceInfo; track exp){
+        <p class="exp-pos"
+          [ngClass]="
+        isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+      "
+        >
+          {{exp.position | uppercase}}
+        </p>
+        <p class="company-name"
+          [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
+      "
+        >
+          {{exp.company}}
+        </p>
+        <p class="exp-desc"
+          [ngClass]="
+        isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
+      "
+        >
+          {{exp.desc}}
+        </p>
+        }
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>

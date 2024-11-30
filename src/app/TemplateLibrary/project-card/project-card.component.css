@@ -1,0 +1,111 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dark-mode-highlight-font-color {
+  color: var(--dark-mode-highlight-font-color);
+}
+
+.dark-mode-dull-font-color {
+  color: var(--dark-mode-dull-font-color);
+}
+
+.light-mode-highlight-font-color {
+  color: var(--light-mode-highlight-font-color);
+}
+
+.light-mode-dull-font-color {
+  color: var(--light-mode-dull-font-color);
+}
+
+.light-mode-white-font-color {
+  color: var(--light-mode-white-font-color);
+}
+
+.logo-image {
+  max-width: 12vw;
+}
+
+.project-card-container p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.lock-close {
+  max-width: 1rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  /* background-color: var(--dark-mode-project-card-color); */
+  margin: 0.2rem;
+  padding: 3rem var(--padding);
+  position: relative;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.project-card-hover-container {
+  display: none;
+  border-radius: var(--border-radius);
+  /* background-color: var(--dark-mode-project-card-color); */
+  margin: 0.2rem;
+  padding: 3rem var(--padding);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.project-card-container,
+.project-card-hover-container {
+  height: 40vh;
+}
+
+.project-card-container:hover {
+  cursor: pointer;
+}
+
+.project-card-main:hover .project-card-hover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.project-card-main:hover .project-card-container {
+  display: none;
+  opacity: 0;
+}
+
+.project-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.project-desc{
+  padding: 24px;
+  text-align: center;
+  font-size: 0.8rem;
+
+}
+
+.project-timeFrame{
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-image {
+    max-width: max-content;
+  }
+}

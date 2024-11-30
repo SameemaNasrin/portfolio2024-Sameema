@@ -1,0 +1,120 @@
+<div class="personal-info-section">
+  <div class="profile-n-skill-section">
+    <img
+      [src]="profileImageSrc"
+      alt="profile-image"
+      class="profile-image"
+      [ngStyle]="{
+        border: isDarkTheme
+          ? '1px solid var(--dark-mode-border-color)'
+          : '1px solid var(--light-mode-border-color)'
+      }"
+    />
+    <div
+      class="skill-section"
+      [ngClass]="
+        isDarkTheme ? 'skill-section-dark-theme' : 'skill-section-light-theme'
+      "
+    >
+      <div class="logo-set">
+        @for(logo of skillsLogosSrc1; track logo){
+
+        <img [src]="logo" alt="logo" class="skills-logo" />
+        } @for(logo of skillsLogosSrc2; track logo){
+        <img [src]="logo" alt="logo" class="skills-logo" />
+        }
+      </div>
+    </div>
+  </div>
+  <div class="theme-section">
+    <div
+      class="other-theme"
+      [ngClass]="isDarkTheme ? 'common-dark-theme' : 'common-light-theme'"
+    >
+      <div
+        class="light-dark-theme"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-light-dark-theme'
+            : 'light-mode-light-dark-theme'
+        "
+        (click)="toggleTheme()"
+      >
+        <div
+          class="light-dark-theme-toggle"
+          [ngClass]="isDarkTheme ? 'toggle-dark' : 'toggle-light'"
+          [ngStyle]="{
+            'background-image': isDarkTheme
+              ? 'url(assets/NightButton.svg)'
+              : 'url(assets/DayButton.svg)'
+          }"
+        ></div>
+      </div>
+      @for(otherTheme of otherThemeColor; track otherTheme){
+      <div
+        class="theme-color-box"
+        [ngStyle]="{
+          'background-color': otherTheme,
+          border: isDarkTheme ? '1px solid #282828' : '1px solid #E1E2E4'
+        }"
+      ></div>
+      }
+    </div>
+  </div>
+
+  <div
+    class="about-section"
+    [ngClass]="isDarkTheme ? 'common-dark-theme' : 'common-light-theme'"
+  >
+    <h1
+      [ngClass]="
+        isDarkTheme
+          ? 'dark-mode-highlight-font-color'
+          : 'light-mode-highlight-font-color'
+      "
+    >
+      Hi I’m Sameema
+    </h1>
+    <p
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      A wizard who loves design and code. I tell stories through my designs and
+      illustrations. I spend most of my time designing for brands and creating
+      design resources and tools. And now, making my own game.
+    </p>
+    <app-link-logo (click)="openDialog('500ms', '250ms')" />
+  </div>
+
+  <div class="social-section">
+    @for(social of socialInfo; track social){
+    <a href="social.socialLink" target="_blank">
+      <img
+        [src]="isDarkTheme ? social.imgSrcDarkTheme : social.imgSrcLightTheme"
+        alt="social"
+        class="social"
+        [ngClass]="isDarkTheme ? 'common-dark-theme' : 'common-light-theme'"
+      />
+    </a>
+    }
+  </div>
+
+  <div class="copyright">
+    <span
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      Made with
+    </span>
+    <img src="assets/heart.svg" alt="heart" />
+    <span
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      &#64;2024</span
+    >
+  </div>
+</div>

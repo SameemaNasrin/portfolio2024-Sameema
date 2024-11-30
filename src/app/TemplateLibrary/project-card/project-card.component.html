@@ -1,0 +1,81 @@
+<div class="project-card-main">
+  <div
+    class="project-card-container"
+    [ngStyle]="{
+      'background-color': isDarkTheme
+        ? 'var(--dark-mode-project-card-color)'
+        : 'var(--light-mode-project-card-color)'
+    }"
+  >
+    @if(project.lock){
+
+    <img
+      src="assets/lock-close.svg"
+      alt="lock-close"
+      class="lock-close"
+    />
+    }
+    <img [src]="project.logoImage" alt="logo-image" class="logo-image" />
+    <p>
+      <span
+        class="project-name"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-highlight-font-color'
+            : 'light-mode-highlight-font-color'
+        "
+      >
+        {{ project.name }}
+      </span>
+      <br />
+      <span
+        class="project-timeFrame"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-dull-font-color'
+            : 'light-mode-dull-font-color'
+        "
+      >
+        {{ project.timeFrame }}
+      </span>
+    </p>
+  </div>
+
+  <div
+    class="project-card-hover-container"
+    [ngStyle]="{
+      'background-color': isDarkTheme
+        ? 'var(--dark-mode-project-card-hover-color)'
+        : 'var(--light-mode-project-card-hover-color)'
+    }"
+  >
+    <span
+      class="project-name"
+      [ngClass]="
+        isDarkTheme
+          ? 'dark-mode-highlight-font-color'
+          : 'light-mode-highlight-font-color'
+      "
+    >
+      {{ project.name }}
+    </span>
+    <br />
+    <span
+      class="project-timeFrame"
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      {{ project.timeFrame }}
+    </span>
+    <span
+      class="project-desc"
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      {{ project.projectDesc }}
+    </span>
+    <app-link-logo />
+  </div>
+</div>

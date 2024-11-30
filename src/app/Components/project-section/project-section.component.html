@@ -1,0 +1,64 @@
+<mat-tab-group
+  mat-stretch-tabs="false"
+  mat-align-tabs="center"
+  class="project-section"
+  [ngClass]="isDarkTheme ? 'common-dark-theme' : 'common-light-theme'"
+  [(selectedIndex)]="selectedTabIndex"
+>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <button
+        class="tab-button"
+        [ngStyle]="{
+          border: isDarkTheme
+            ? '1px solid var(--dark-mode-border-color)'
+            : '1px solid var(--light-mode-border-color)',
+          color: isDarkTheme
+            ? 'var(--dark-mode-highlight-font-color)'
+            : 'var(--light-mode-highlight-font-color)',
+          backgroundColor:
+            selectedTabIndex === 0
+              ? isDarkTheme
+                ? '#303030'
+                : '#D0D0D0'
+              : 'transparent'
+        }"
+      >
+        CASE STUDIES
+      </button>
+    </ng-template>
+    <div class="project-card-section">
+      @for(project of projects; track project){
+      <app-project-card [project]="project" />
+      }
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <button
+        class="tab-button"
+        [ngStyle]="{
+          border: isDarkTheme
+            ? '1px solid var(--dark-mode-border-color)'
+            : '1px solid var(--light-mode-border-color)',
+          color: isDarkTheme
+            ? 'var(--dark-mode-highlight-font-color)'
+            : 'var(--light-mode-highlight-font-color)',
+          backgroundColor:
+            selectedTabIndex === 1
+              ? isDarkTheme
+                ? '#303030'
+                : '#D0D0D0'
+              : 'transparent'
+        }"
+      >
+        VISUAL DESIGNS
+      </button>
+    </ng-template>
+    <div class="project-card-section">
+      @for(project of projects; track project){
+      <app-project-card [project]="project" />
+      }
+    </div>
+  </mat-tab>
+</mat-tab-group>

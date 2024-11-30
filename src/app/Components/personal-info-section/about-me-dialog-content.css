@@ -1,0 +1,230 @@
+* {
+  --dark-mode-modal-bright-font-color: #d5d5d8;
+  --dark-mode-modal-light-font-color: #afafbf;
+  --light-mode-modal-bright-font-color: red;
+  --light-mode-modal-light-font-color: orange;
+
+  --dark-mode-modal-bg-color-1: #2c3a3c;
+  --dark-mode-modal-bg-color-2: #2c2c2c;
+  --dark-mode-modal-bg-color-3: #3c3431;
+  --dark-mode-modal-bg-color-4: #3c372f;
+  --dark-mode-modal-bg-color-5: #343434;
+  --dark-mode-modal-bg-color-6: #484052;
+  --light-mode-modal-bg-color: #ffffff;
+
+  --margin: 12px;
+  --padding: 12px;
+  --border-radius: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+mat-dialog-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: transparent;
+}
+
+mat-dialog-content::-webkit-scrollbar {
+  display: none;
+}
+
+::ng-deep .mat-mdc-dialog-content {
+  max-height: 100vh !important;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: transparent !important;
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.about-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.about-block p {
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: right;
+  padding: 20px;
+}
+
+.profile-block,
+.profile-pic {
+  border-radius: var(--border-radius);
+}
+
+.profile-pic {
+  width: 100%;
+}
+.exp-address-block {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--padding);
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  box-shadow: none !important;
+}
+
+.dark-mode-bright-font-color {
+  color: var(--dark-mode-modal-bright-font-color);
+}
+
+.dark-mode-dull-font-color {
+  color: var(--dark-mode-modal-light-font-color);
+}
+
+.light-mode-bright-font-color {
+  color: var(--light-mode-modal-bright-font-color);
+}
+
+.light-mode-dull-font-color {
+  color: var(--light-mode-modal-light-font-color);
+}
+
+.small-text {
+  font-size: 0.6rem;
+}
+
+.big-text {
+  font-size: 2rem;
+}
+
+.contry-state-p {
+  border-left: 1px solid #af52de;
+  padding-left: 10px;
+}
+
+.heading {
+  font-size: 0.8rem;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.tech-stack,
+.contact-info,
+.about-me-info,
+.experience-info {
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+}
+
+.about-me-info,
+.experience-info {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.tech-stack-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.skills-logo {
+  margin-right: 20px;
+}
+
+.contacts {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contacts div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.contacts div img {
+  max-width: 1rem;
+  margin-right: 5px;
+}
+
+.contacts div p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.little-about-me {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.exp-pos {
+  font-size: 1.2rem;
+  padding-top: 40px;
+}
+
+.company-name {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.exp-desc {
+  font-size: 1rem;
+  font-weight: 200;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #686868;
+}
+
+.hello-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .header-section {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+
+  .about-block,
+  .exp-address-block,
+  .about-me-info,
+  .experience-info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+
+::ng-deep .mat-mdc-dialog-container .mat-mdc-dialog-content {
+  padding: 10px !important;
+}

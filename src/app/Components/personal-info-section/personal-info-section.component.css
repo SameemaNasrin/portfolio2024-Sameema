@@ -1,0 +1,228 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dark-mode-highlight-font-color {
+  color: var(--dark-mode-highlight-font-color);
+}
+
+.dark-mode-dull-font-color {
+  color: var(--dark-mode-dull-font-color);
+}
+
+.light-mode-highlight-font-color {
+  color: var(--light-mode-highlight-font-color);
+}
+
+.light-mode-dull-font-color {
+  color: var(--light-mode-dull-font-color);
+}
+
+.light-mode-white-font-color {
+  color: var(--light-mode-white-font-color);
+}
+
+.profile-n-skill-section {
+  display: grid;
+  /* flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: var(--border-radius);
+}
+
+.skills-logo {
+  padding: 10px;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+
+.skill-section-dark-theme {
+  border: 1px solid var(--dark-mode-border-color);
+}
+
+.skill-section-light-theme {
+  border: 1px solid var(--light-mode-border-color);
+}
+
+.about-section {
+  margin-top: var(--margin);
+  padding: var(--padding);
+  padding-top: 0px;
+  border-radius: var(--border-radius);
+}
+
+.common-dark-theme {
+  background-image: url("/assets/BG.svg");
+  background-position: center;
+  background-size: cover;
+  background-color: var(--dark-mode-bg-color);
+  border: 1px solid var(--dark-mode-border-color);
+}
+
+.common-light-theme {
+  background-image: url("/assets/BG.svg");
+  background-color: var(--light-mode-bg-color);
+  border: 1px solid var(--light-mode-border-color);
+}
+
+.about-section h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.social-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  column-gap: var(--padding);
+}
+
+.social-section a {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+}
+
+.social-section a:hover {
+  cursor: pointer;
+}
+
+.social {
+  margin-top: var(--margin);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  height: 2rem;
+}
+
+.about-section h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.about-section p {
+  font-size: 0.9rem;
+}
+
+app-link-logo {
+  margin-left: 85%;
+}
+
+.theme-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  margin-top: var(--margin);
+}
+
+.light-dark-theme {
+  margin-right: var(--margin);
+  /* transform: rotate(90deg); */
+
+  width: 4rem;
+  height: 2rem;
+  border-radius: 40px;
+}
+
+.dark-mode-light-dark-theme {
+  border: 1px solid var(--dark-mode-border-color);
+}
+
+.light-mode-light-dark-theme {
+  border: 1px solid var(--light-mode-border-color);
+}
+
+.other-theme {
+  display: flex;
+  flex-direction: row;
+  border-radius: 40px;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.theme-color-box {
+  margin: 5px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.copyright span {
+  font-size: 0.8rem;
+}
+
+.light-dark-theme-toggle {
+  text-align: center;
+  color: transparent;
+  padding: 0px;
+  width: 1.4rem;
+  background-image: url("/assets/NightButton.svg");
+  background-position: center;
+  height: 1.4rem;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: background-image 0.1s ease-in-out, left 0.6s ease-in-out, transform 0.8s ease-in-out 0.1s;
+}
+
+.light-dark-theme {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url("/assets/NightImage.svg");
+  background-position: center;
+  transition: transform 0.6s ease-in-out;
+}
+.light-dark-theme-toggle.toggle-light {
+  left: 2.3rem;
+  transform: rotate(90deg);
+}
+
+.light-dark-theme-toggle.toggle-dark {
+  left: 0.2rem;
+  transform: rotate(0deg);
+
+}
+.light-dark-theme-toggle:active {
+  transform: scale(0.9);
+}
+
+.dark-mode-light-dark-theme {
+  background-image: url("/assets/NightImage.svg");
+  background-size: cover;
+  /* transform: translateY(-50%); */
+  /* background-position: 1px; */
+  background-repeat: no-repeat;
+}
+
+.light-mode-light-dark-theme {
+  background-image: url("/assets/DayImage.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* transform: translateY(50%); */
+}
+
+.profile-image{
+  width: 95%;
+  border-radius: 14px;
+}

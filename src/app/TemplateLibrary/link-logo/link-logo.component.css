@@ -1,0 +1,8 @@
+svg:hover path,
+svg:hover rect {
+  stroke: var(--link-hover-color);
+}
+
+svg {
+  cursor: pointer;
+}
