@@ -23,8 +23,7 @@ import { DataService } from '../../Shared/data.service';
 })
 export class PersonalInfoSectionComponent implements OnInit {
   profileImageSrc!: string;
-  darkThemeSocialsLogosSrc!: string[];
-  lightThemeSocialsLogosSrc!: string[];
+  socialInfo!: any;
   isDarkTheme: boolean = true;
   techStack: any;
   otherThemeColor!: string[];
@@ -57,8 +56,7 @@ export class PersonalInfoSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProfileImageSrc();
-    this.getDarkSocialsLogosSrc();
-    this.getLightThemeSocialsLogosSrc();
+    this.getSocialInfo();
     this.getTechStack();
     this.getOtherThemeColor();
   }
@@ -67,12 +65,8 @@ export class PersonalInfoSectionComponent implements OnInit {
     this.profileImageSrc = Configurations.profileImageSrc;
   }
 
-  getDarkSocialsLogosSrc() {
-    this.darkThemeSocialsLogosSrc = Configurations.darkThemeSocialsLogosSrc;
-  }
-
-  getLightThemeSocialsLogosSrc() {
-    this.lightThemeSocialsLogosSrc = Configurations.lightThemeSocialsLogosSrc;
+  getSocialInfo() {
+    this.socialInfo = Configurations.socialInfo;
   }
 
   getTechStack() {
@@ -100,25 +94,20 @@ export class PersonalInfoSectionComponent implements OnInit {
 })
 export class AboutMeDialogContent implements OnInit {
   isDarkTheme: boolean = true;
-  darkThemeSocialsLogosSrc!: string[];
-  lightThemeSocialsLogosSrc!: string[];
+  techStack: any;
   experienceInfo!: any;
 
   constructor(public dialogRef: MatDialogRef<AboutMeDialogContent>) {}
 
   ngOnInit(): void {
-    this.getDarkThemeSocialsLogosSrc();
-    this.getLightThemeSocialsLogosSrc();
+    this.getTechStack();
     this.getExperienceInfo();
   }
 
-  getDarkThemeSocialsLogosSrc() {
-    this.darkThemeSocialsLogosSrc = Configurations.darkThemeSocialsLogosSrc;
+  getTechStack() {
+    this.techStack = Configurations.techStack;
   }
 
-  getLightThemeSocialsLogosSrc() {
-    this.lightThemeSocialsLogosSrc = Configurations.lightThemeSocialsLogosSrc;
-  }
 
   getExperienceInfo() {
     this.experienceInfo = Configurations.experienceInfo;

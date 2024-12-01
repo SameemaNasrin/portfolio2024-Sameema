@@ -1,18 +1,6 @@
 export const Configurations = {
   profileImageSrc: 'assets/ProfilePic.svg',
 
-  darkThemeSocialsLogosSrc: [
-    'assets/darkTheme_frontendmentor.svg',
-    'assets/darkTheme_github.svg',
-    'assets/darkTheme_linkedin-square.svg',
-  ],
-
-  lightThemeSocialsLogosSrc: [
-    'assets/lightTheme_frontendmentor.svg',
-    'assets/lightTheme_github.svg',
-    'assets/lightTheme_linkedin-square.svg',
-  ],
-
   techStack: [
     'assets/logos_adobe-xd.svg',
     'assets/logos_figma.svg',
@@ -26,6 +14,36 @@ export const Configurations = {
     'assets/logos_adobe-xd.svg',
     'assets/logos_figma.svg',
     'assets/logos_adobe-xd.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
+  ],
+
+  socialInfo: [
+    {
+      imgSrcDarkTheme: 'assets/darkTheme_frontendmentor.svg',
+      imgSrcLightTheme: 'assets/lightTheme_frontendmentor.svg',
+      socialLink: 'https://www.frontendmentor.io/profile/SameemaNasrin',
+    },
+    {
+      imgSrcDarkTheme: 'assets/darkTheme_github.svg',
+      imgSrcLightTheme: 'assets/lightTheme_github.svg',
+      socialLink: 'https://github.com/SameemaNasrin',
+    },
+    {
+      imgSrcDarkTheme: 'assets/darkTheme_linkedin-square.svg',
+      imgSrcLightTheme: 'assets/lightTheme_linkedin-square.svg',
+      socialLink: 'https://www.linkedin.com/in/sameema-nasrin-3a435b170/',
+    },
   ],
 
   otherThemeColor: ['#FF8274', '#FFED74', '#8BFF74', '#8274FF', '#EB49C3'],
@@ -107,20 +125,19 @@ export const Configurations = {
 
   experienceInfo: [
     {
-      position: 'Product Designer',
-      company: '@thinkbridge • Mar 2023 - Present',
-      desc: 'Holistic Product Design: Managed design for diverse B2C and B2B products,  fostering business growth and user satisfaction.<br>Client-Centric Leadership: Singularly guided design for Client: Prepaid  Technologies, ensuring superior design outcomes and strategic product  development.<br>Innovative Framework: Spearheaded the implementation of a design system driven product design framework, leading to substantial reductions in feature  design and development durations',
+      position: 'SENIOR SOFTWARE ENGINEER',
+      company: '@Capgemini • DBS • July, 2023 - Nov, 2024',
+      desc: 'Led development of new features in a full-stack Angular app, enhancing functionality and user experience through effective architecture and implementation. Tech Stack: Angular, TypeScript, HTML, CSS, Angular Material, PrimeNg, REST APIs, Git, RxJs',
     },
     {
-      position: 'UX DESIGNER',
-      company: '@Surreal Technologies Pvt Ltd • Jun 2021 - Feb 2023',
-      desc: 'User-Centric Module Enhancement: Led the refinement of Newtons Web ERP  modules for enhanced user experiences # Diverse Skill Set: Analyzed user needs, generated ideas, created wireframes,  storyboarded use cases, and developed interactive prototypes| Efficient  Finance Module: Designed & implemented a comprehensive finance module,  streamlining processes & providing valuable analytics # Design Solutions: Translated user needs into effective designs, ensuring  usability alignment and user satisfaction| Consistent Experience: Ensured  platform-wide consistency by documenting UI elements, maintaining a  coherent design approach',
+      position: 'SOFTWARE ENGINEER',
+      company: '@Capgemini • DBS • July, 2021 - July, 2023',
+      desc: 'Enhanced Angular projects with full-stack capabilities, developing StreamSets pipelines for data extraction and integrating back-end API with Spring Boot. Tech Stack: Angular, StreamSets, Spring Boot, REST API',
     },
-
     {
-      position: 'BANK OFFICER',
-      company: '@Axis Bank & Yes Bank • Apr 20218 - Oct 2019',
-      desc: 'Oversee daily MIS activities, encompassing business goal alignment and  strategy ô Analyze customer operations to identify areas for improvement and provide  recommendations ô Maintain data management integrity in accordance with business  requirements',
+      position: 'SOFTWARE ENGINEER INTERN,',
+      company: '@Capgemini • Mar, 2021 - Jul, 2021',
+      desc: 'Mastered full-stack development with Angular for dynamic UIs and Java Spring Boot for strong backend solutions, creating responsive, high-performance applications that balance functionality, usability, and scalability. Project Github link - Front-end, Back-end'
     },
   ],
 };

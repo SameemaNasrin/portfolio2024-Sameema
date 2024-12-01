@@ -47,13 +47,21 @@
   max-height: 1.3rem;
 }
 
-.social-logo-div{
+.social-logo-div {
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 40px;
+}
+
+.social-logo-div:hover {
+  cursor: pointer;
+}
+
+.social-logo-div:active {
+  transform: scale(0.8);
 }
 
 /* .social-section-dark-theme {
@@ -150,7 +158,7 @@ app-link-logo {
 }
 
 .theme-color-box {
-  margin: 5px;
+  /* margin: 5px; */
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
@@ -191,12 +199,12 @@ app-link-logo {
   transition: transform 0.6s ease-in-out;
 }
 .light-dark-theme-toggle.toggle-light {
-  left: 2.3rem;
-  transform: rotate(90deg);
+  left: 0.2rem;
+  transform: rotate(-90deg);
 }
 
 .light-dark-theme-toggle.toggle-dark {
-  left: 0.2rem;
+  left: 2.3rem;
   transform: rotate(0deg);
 }
 .light-dark-theme-toggle:active {
@@ -206,8 +214,6 @@ app-link-logo {
 .dark-mode-light-dark-theme {
   background-image: url("../../../assets/NightImage.svg");
   background-size: cover;
-  /* transform: translateY(-50%); */
-  /* background-position: 1px; */
   background-repeat: no-repeat;
 }
 

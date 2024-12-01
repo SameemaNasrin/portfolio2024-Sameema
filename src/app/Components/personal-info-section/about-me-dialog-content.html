@@ -36,7 +36,7 @@
           [ngClass]="
     isDarkTheme ? 'dark-mode-bright-font-color big-text' : 'light-mode-bright-font-color big-text'
   "
-          >5</span
+          >3.8</span
         >
         <span
           class="exp"
@@ -81,8 +81,8 @@
         MY TECH STACK
       </p>
       <div class="tech-stack-logo">
-        @for(logo of darkThemeSocialsLogosSrc; track logo){
-          <img [src]="logo" alt="logo" class="socials-logo" />
+        @for(tech of techStack; track tech){
+        <img [src]="tech" alt="tech" class="skills-logo" />
         }
       </div>
     </div>
@@ -100,25 +100,25 @@
       </p>
       <div class="contacts">
         <div class="mail">
-          <img src="assets/mail-icon.svg" alt="mail" />
           <p
             [ngClass]="
           isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
-        "
+          "
           >
+            <img src="assets/mail-icon.svg" alt="mail" />
             sameemanasrin23&#64;gmail.com
           </p>
         </div>
-        <div class="phone">
-          <img src="assets/phone-icon.svg" alt="phone" />
+        <!-- <div class="phone">
           <p
-            [ngClass]="
+          [ngClass]="
           isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
-        "
+          "
           >
-            +91-8918468608
+          <img src="assets/phone-icon.svg" alt="phone" />
+            +91-
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div
@@ -139,11 +139,12 @@
       isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
     "
       >
-        Product designer transitioned career path in 2020 from banking to
-        technology With 3 years of hands-on UI-UX design experience, I ve
-        collaborated effectively, delivering visually appealing designs. Having
-        worked in agile teams, I comprehend the significance of product metrics,
-        ensuring end-to-end project ownership.
+        Specializing in Frontend Developmenet, I’m driven by a passion for
+        crafting user-friendly, high performance applications. My experience
+        spans a range of modern technologies and frameworks, enabling me to
+        create solutions tailored to project goals. Focused on impact, I aim to
+        bring ideas to life through seamless, engaging digital experiences.
+        Let’s make great things happen!
       </p>
     </div>
 
