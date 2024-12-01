@@ -19,7 +19,7 @@
 }
 
 .common-dark-theme {
-  background-image: url("/assets/projectSectionBG.svg");
+  background-image: url("../../../assets/projectSectionBG.svg");
   background-position: center;
   background-size: cover;
   background-color: var(--dark-mode-bg-color-opacity12);
@@ -27,7 +27,7 @@
 }
 
 .common-light-theme {
-  background-image: url("/assets/projectSectionBG.svg");
+  background-image: url("../../../assets/projectSectionBG.svg");
   background-color: var(--light-mode-bg-color-opacity12);
   border: 1px solid var(--light-mode-border-color);
 }

@@ -73,7 +73,7 @@
 }
 
 .common-dark-theme {
-  background-image: url("/assets/BG.svg");
+  background-image: url("../../../assets/BG.svg");
   background-position: center;
   background-size: cover;
   background-color: var(--dark-mode-bg-color);
@@ -81,7 +81,7 @@
 }
 
 .common-light-theme {
-  background-image: url("/assets/BG.svg");
+  background-image: url("../../../assets/BG.svg");
   background-color: var(--light-mode-bg-color);
   border: 1px solid var(--light-mode-border-color);
 }
@@ -171,7 +171,7 @@ app-link-logo {
   color: transparent;
   padding: 0px;
   width: 1.4rem;
-  background-image: url("/assets/NightButton.svg");
+  background-image: url("../../../assets/NightButton.svg");
   background-position: center;
   height: 1.4rem;
   border-radius: 50%;
@@ -186,7 +186,7 @@ app-link-logo {
   display: flex;
   position: relative;
   justify-content: center;
-  background-image: url("/assets/NightImage.svg");
+  background-image: url("../../../assets/NightImage.svg");
   background-position: center;
   transition: transform 0.6s ease-in-out;
 }
@@ -204,7 +204,7 @@ app-link-logo {
 }
 
 .dark-mode-light-dark-theme {
-  background-image: url("/assets/NightImage.svg");
+  background-image: url("../../../assets/NightImage.svg");
   background-size: cover;
   /* transform: translateY(-50%); */
   /* background-position: 1px; */
@@ -212,7 +212,7 @@ app-link-logo {
 }
 
 .light-mode-light-dark-theme {
-  background-image: url("/assets/DayImage.svg");
+  background-image: url("../../../assets/DayImage.svg");
   background-size: cover;
   background-repeat: no-repeat;
   /* transform: translateY(50%); */
