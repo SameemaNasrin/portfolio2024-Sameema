@@ -23,10 +23,10 @@ import { DataService } from '../../Shared/data.service';
 })
 export class PersonalInfoSectionComponent implements OnInit {
   profileImageSrc!: string;
-  skillsLogosSrc1!: string[];
-  skillsLogosSrc2!: string[];
+  socialsLogosSrc!: string[];
   isDarkTheme: boolean = true;
   socialInfo: any;
+  techStack: any;
   otherThemeColor!: string[];
 
   constructor(public dialog: MatDialog, private readonly dataService: DataService) {}
@@ -54,26 +54,26 @@ export class PersonalInfoSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProfileImageSrc();
-    this.getSkillsLogosSrc1();
-    this.getSkillsLogosSrc2();
+    this.getSocialsLogosSrc();
     this.getSocialInfo();
+    this.getTechStack();
     this.getOtherThemeColor();
   }
 
   getProfileImageSrc() {
     this.profileImageSrc = Configurations.profileImageSrc;
   }
-
-  getSkillsLogosSrc1() {
-    this.skillsLogosSrc1 = Configurations.skillsLogosSrc1;
-  }
   
-  getSkillsLogosSrc2() {
-    this.skillsLogosSrc2 = Configurations.skillsLogosSrc1;
+  getSocialsLogosSrc() {
+    this.socialsLogosSrc = Configurations.SocialsLogosSrc;
   }
 
   getSocialInfo() {
-    this.socialInfo = Configurations.socialInfo;
+    this.socialInfo = Configurations.SocialsLogosSrc;
+  }
+
+  getTechStack() {
+    this.techStack = Configurations.techStack;
   }
 
   getOtherThemeColor() {
@@ -97,19 +97,18 @@ export class PersonalInfoSectionComponent implements OnInit {
 })
 export class AboutMeDialogContent implements OnInit {
   isDarkTheme: boolean = true;
-  skillsLogosSrc!: string[];
+  socialsLogosSrc!: string[];
   experienceInfo!: any;
 
   constructor(public dialogRef: MatDialogRef<AboutMeDialogContent>) {}
 
   ngOnInit(): void {
-    this.getSkillsLogosSrc();
-    this.getSkillsLogosSrc();
+    this.getSocialsLogosSrc();
     this.getExperienceInfo();
   }
 
-  getSkillsLogosSrc() {
-    this.skillsLogosSrc = Configurations.skillsLogosSrc;
+  getSocialsLogosSrc() {
+    this.socialsLogosSrc = Configurations.SocialsLogosSrc;
   }
 
   getExperienceInfo() {

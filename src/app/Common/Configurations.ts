@@ -1,45 +1,25 @@
 export const Configurations = {
   profileImageSrc: 'assets/ProfilePic.svg',
 
-  skillsLogosSrc: [
+  SocialsLogosSrc: [
+    'assets/darkTheme_frontendmentor.svg',
+    'assets/darkTheme_github.svg',
+    'assets/darkTheme_linkedin-square.svg',
+  ],
+
+  techStack: [
     'assets/logos_adobe-xd.svg',
     'assets/logos_figma.svg',
     'assets/logos_adobe-xd.svg',
-  ],
-
-  skillsLogosSrc1: [
-    'assets/logos_adobe-xd.svg',
-    'assets/logos_adobe-xd.svg',
-    'assets/logos_figma.svg',
-  ],
-
-  skillsLogosSrc2: [
     'assets/logos_adobe-xd.svg',
     'assets/logos_figma.svg',
     'assets/logos_adobe-xd.svg',
-  ],
-
-  socialInfo: [
-    {
-      imgSrcDarkTheme: 'assets/darkTheme_behance.svg',
-      imgSrcLightTheme: 'assets/lightTheme_behance.svg',
-      socialLink: '#',
-    },
-    {
-      imgSrcDarkTheme: 'assets/darkTheme_dribbble.svg',
-      imgSrcLightTheme: 'assets/lightTheme_dribbble.svg',
-      socialLink: '#',
-    },
-    {
-      imgSrcDarkTheme: 'assets/darkTheme_linkedin-square.svg',
-      imgSrcLightTheme: 'assets/lightTheme_linkedin-square.svg',
-      socialLink: '#',
-    },
-    {
-      imgSrcDarkTheme: 'assets/darkTheme_youtube.svg',
-      imgSrcLightTheme: 'assets/lightTheme_youtube.svg',
-      socialLink: '#',
-    },
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_adobe-xd.svg',
+    'assets/logos_figma.svg',
+    'assets/logos_adobe-xd.svg',
   ],
 
   otherThemeColor: ['#FF8274', '#FFED74', '#8BFF74', '#8274FF', '#EB49C3'],

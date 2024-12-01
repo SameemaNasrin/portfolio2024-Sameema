@@ -65,7 +65,7 @@
     </div>
   </div>
   <div class="hello-container">
-    <img src="assets/hello.gif" alt="hello" class="hello">
+    <img src="assets/hello.gif" alt="hello" class="hello" />
   </div>
   <div class="about-section">
     <div
@@ -81,8 +81,8 @@
         MY TECH STACK
       </p>
       <div class="tech-stack-logo">
-        @for(logo of skillsLogosSrc; track logo){
-        <img [src]="logo" alt="logo" class="skills-logo" />
+        @for(logo of socialsLogosSrc; track logo){
+          <img [src]="logo" alt="logo" class="socials-logo" />
         }
       </div>
     </div>
@@ -162,21 +162,24 @@
 
       <div class="experiences">
         @for(exp of experienceInfo; track exp){
-        <p class="exp-pos"
+        <p
+          class="exp-pos"
           [ngClass]="
         isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
       "
         >
           {{exp.position | uppercase}}
         </p>
-        <p class="company-name"
+        <p
+          class="company-name"
           [ngClass]="
         isDarkTheme ? 'dark-mode-dull-font-color small-text' : 'light-mode-dull-font-color small-text'
       "
         >
           {{exp.company}}
         </p>
-        <p class="exp-desc"
+        <p
+          class="exp-desc"
           [ngClass]="
         isDarkTheme ? 'dark-mode-bright-font-color' : 'light-mode-bright-font-color'
       "
