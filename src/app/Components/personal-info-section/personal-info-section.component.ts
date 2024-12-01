@@ -23,17 +23,20 @@ import { DataService } from '../../Shared/data.service';
 })
 export class PersonalInfoSectionComponent implements OnInit {
   profileImageSrc!: string;
-  socialsLogosSrc!: string[];
+  darkThemeSocialsLogosSrc!: string[];
+  lightThemeSocialsLogosSrc!: string[];
   isDarkTheme: boolean = true;
-  socialInfo: any;
   techStack: any;
   otherThemeColor!: string[];
 
-  constructor(public dialog: MatDialog, private readonly dataService: DataService) {}
+  constructor(
+    public dialog: MatDialog,
+    private readonly dataService: DataService
+  ) {}
 
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
-    this.dataService.emitIsDarkTheme(this.isDarkTheme)
+    this.dataService.emitIsDarkTheme(this.isDarkTheme);
     document.body.classList.toggle('dark-theme', this.isDarkTheme);
     document.body.classList.toggle('light-theme', !this.isDarkTheme);
   }
@@ -54,8 +57,8 @@ export class PersonalInfoSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProfileImageSrc();
-    this.getSocialsLogosSrc();
-    this.getSocialInfo();
+    this.getDarkSocialsLogosSrc();
+    this.getLightThemeSocialsLogosSrc();
     this.getTechStack();
     this.getOtherThemeColor();
   }
@@ -63,13 +66,13 @@ export class PersonalInfoSectionComponent implements OnInit {
   getProfileImageSrc() {
     this.profileImageSrc = Configurations.profileImageSrc;
   }
-  
-  getSocialsLogosSrc() {
-    this.socialsLogosSrc = Configurations.SocialsLogosSrc;
+
+  getDarkSocialsLogosSrc() {
+    this.darkThemeSocialsLogosSrc = Configurations.darkThemeSocialsLogosSrc;
   }
 
-  getSocialInfo() {
-    this.socialInfo = Configurations.SocialsLogosSrc;
+  getLightThemeSocialsLogosSrc() {
+    this.lightThemeSocialsLogosSrc = Configurations.lightThemeSocialsLogosSrc;
   }
 
   getTechStack() {
@@ -97,18 +100,24 @@ export class PersonalInfoSectionComponent implements OnInit {
 })
 export class AboutMeDialogContent implements OnInit {
   isDarkTheme: boolean = true;
-  socialsLogosSrc!: string[];
+  darkThemeSocialsLogosSrc!: string[];
+  lightThemeSocialsLogosSrc!: string[];
   experienceInfo!: any;
 
   constructor(public dialogRef: MatDialogRef<AboutMeDialogContent>) {}
 
   ngOnInit(): void {
-    this.getSocialsLogosSrc();
+    this.getDarkThemeSocialsLogosSrc();
+    this.getLightThemeSocialsLogosSrc();
     this.getExperienceInfo();
   }
 
-  getSocialsLogosSrc() {
-    this.socialsLogosSrc = Configurations.SocialsLogosSrc;
+  getDarkThemeSocialsLogosSrc() {
+    this.darkThemeSocialsLogosSrc = Configurations.darkThemeSocialsLogosSrc;
+  }
+
+  getLightThemeSocialsLogosSrc() {
+    this.lightThemeSocialsLogosSrc = Configurations.lightThemeSocialsLogosSrc;
   }
 
   getExperienceInfo() {

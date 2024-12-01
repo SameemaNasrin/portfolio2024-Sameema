@@ -11,7 +11,7 @@
       }"
     />
     <div class="social-section">
-      @for(logo of socialsLogosSrc; track logo){
+      @if(isDarkTheme){ @for(logo of darkThemeSocialsLogosSrc; track logo){
       <div
         class="social-logo-div"
         [ngStyle]="{
@@ -20,7 +20,16 @@
       >
         <img [src]="logo" alt="logo" class="socials-logo" />
       </div>
-      }
+      } } @else{ @for(logo of lightThemeSocialsLogosSrc; track logo){
+      <div
+        class="social-logo-div"
+        [ngStyle]="{
+          border: isDarkTheme ? '1px solid #282828' : '1px solid #E1E2E4'
+        }"
+      >
+        <img [src]="logo" alt="logo" class="socials-logo" />
+      </div>
+      } }
     </div>
   </div>
   <div class="theme-section">
@@ -124,9 +133,7 @@
     <span
       [ngClass]="
         isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
-      "
-    >
-      &#64;2024</span
-    >
+      ">
+      &#64;2024</span>
   </div>
 </div>
