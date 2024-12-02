@@ -8,22 +8,27 @@
   --dark-mode-bg-color: #171717;
   --dark-mode-bg-color-opacity12: #1717171f;
   --dark-mode-border-color: #282828;
-  --dark-mode-project-card-color: #19191e;
+  --dark-mode-project-card-top-color: #19191e;
+  --dark-mode-project-card-bottom-color: #2F2F3E;
   --dark-mode-project-card-hover-color: #000000b2;
   --dark-mode-highlight-font-color: #dddddd;
   --dark-mode-dull-font-color: #767680;
   --dark-mode-logo-color: #ffffff;
-
+  --dark-mode-project-info-hover-bg-color: #00000080;
+  
   --light-mode-main-bg-color: #f2fcff;
   --light-mode-bg-color: #ffffff;
   --light-mode-bg-color-opacity12: #ffffff00;
   --light-mode-border-color: #e1e2e4;
-  --light-mode-project-card-color: #ffffff;
+  
+  --light-mode-project-card-top-color: #F6F9FD;
+  --light-mode-project-card-bottom-color: #ffffff;
   --light-mode-project-card-hover-color: #ffffffb2;
   --light-mode-highlight-font-color: #171717;
   --light-mode-dull-font-color: #767680;
   --light-mode-white-font-color: #ffffff;
   --light-mode-logo-color: #4f4e4e;
+  --light-mode-project-info-hover-bg-color: #F6F9FDCC;
 
   --margin: 0.5rem;
   --padding: 0.5rem;

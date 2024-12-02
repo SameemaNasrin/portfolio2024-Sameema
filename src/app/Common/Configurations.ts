@@ -50,76 +50,54 @@ export const Configurations = {
 
   projects: [
     {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
+      name: 'Timerack Dayly Portal',
+      logoImage: 'assets/Mockups/mockup 1.png',
+      timeFrame: 'Thinkbridge 2024',
       projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
+        "Designed Timerack's new Daily Portal, focusing on intuitive time tracking, shift management, and scheduling to enhance workforce efficiency",
       lock: true,
+      leftText: 'INTERFACE',
+      rightText: 'DESIGN',
     },
     {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
+      name: 'DOS Project Management',
+      logoImage: ' assets/Mockups/mockup 2.png',
+      timeFrame: 'Thinkbridge 2024',
       projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
+        'Minimal yet powerful project management SaaS design to help admins ensure data integrity, manage access, and optimize performance',
       lock: false,
+      leftText: 'PRODUCT',
+      rightText: 'DESIGN',
     },
     {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
+      name: 'Dash Fintech Design System',
+      logoImage: ' assets/Mockups/mockup 3.png',
+      timeFrame: 'Thinkbridge 2023',
       projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
+        'Applied atomic design methodology to create a scalable and adaptable foundational design system for the client’s finance portal',
       lock: false,
+      leftText: 'SYSTEM',
+      rightText: 'DESIGN',
     },
     {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
+      name: 'Faculty Recruitment',
+      logoImage: ' assets/Mockups/mockup 4.png',
+      timeFrame: 'PlutoEdu 2023',
       projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
+        "Designed PlutoEdu's faculty recruitment app with onboarding and a chatbot for managing decisions and actions",
       lock: true,
+      leftText: 'EXPERIENCE',
+      rightText: 'DESIGN',
     },
     {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
+      name: 'Newton Admission Management',
+      logoImage: ' assets/Mockups/mockup 4.png',
+      timeFrame: 'Surreal technologies 2021-22',
       projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
+        'Designed solutions to help school counselors efficiently manage both online and offline admissions',
       lock: true,
-    },
-    {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
-      projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
-      lock: true,
-    },
-    {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
-      projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
-      lock: false,
-    },
-    {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
-      projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
-      lock: false,
-    },
-    {
-      name: 'Project Name 1',
-      logoImage: 'assets/projectImgDummy.svg',
-      timeFrame: '2022',
-      projectDesc:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aspernatur quasi dolor nostrum',
-      lock: false,
+      leftText: 'PRODUCT',
+      rightText: 'DESIGN',
     },
   ],
 

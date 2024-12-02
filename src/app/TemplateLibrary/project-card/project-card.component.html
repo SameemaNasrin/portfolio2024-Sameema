@@ -1,22 +1,38 @@
 <div class="project-card-main">
+  <!-- (click)="openProjectDialog()" -->
   <div
     class="project-card-container"
     [ngStyle]="{
-      'background-color': isDarkTheme
-        ? 'var(--dark-mode-project-card-color)'
-        : 'var(--light-mode-project-card-color)'
+      'background-image': isDarkTheme
+        ? 'linear-gradient(var(--dark-mode-project-card-top-color), var(--dark-mode-project-card-bottom-color))'
+        : 'linear-gradient(var(--light-mode-project-card-top-color), var(--light-mode-project-card-top-color))'
     }"
   >
     @if(project.lock){
 
-    <img
-      src="assets/lock-close.svg"
-      alt="lock-close"
-      class="lock-close"
-    />
+    <img src="assets/lock-close.svg" alt="lock-close" class="lock-close" />
     }
+    <div class="scroll-text">
+      <p
+        class="left-text"
+        [ngStyle]="{
+          '-webkit-text-stroke-color': isDarkTheme ? '#D4DAF180' : '#000'
+        }"
+      >
+        {{ project.leftText }}
+      </p>
+      <p
+        class="right-text"
+        [ngStyle]="{
+          '-webkit-text-stroke-color': isDarkTheme ? '#D4DAF180' : '#000'
+        }"
+      >
+        {{ project.rightText }}
+      </p>
+    </div>
     <img [src]="project.logoImage" alt="logo-image" class="logo-image" />
-    <p>
+
+    <p class="project-info">
       <span
         class="project-name"
         [ngClass]="
@@ -38,44 +54,57 @@
       >
         {{ project.timeFrame }}
       </span>
+      <br />
     </p>
-  </div>
-
-  <div
-    class="project-card-hover-container"
-    [ngStyle]="{
-      'background-color': isDarkTheme
-        ? 'var(--dark-mode-project-card-hover-color)'
-        : 'var(--light-mode-project-card-hover-color)'
-    }"
-  >
-    <span
-      class="project-name"
-      [ngClass]="
-        isDarkTheme
-          ? 'dark-mode-highlight-font-color'
-          : 'light-mode-highlight-font-color'
-      "
+    <div
+      class="hover-overlay"
+      [ngStyle]="{
+        'background-color': isDarkTheme ? '#00000080' : '#D4DAF180'
+      }"
+    ></div>
+    <p
+      class="project-info-hover"
+      [ngStyle]="{
+        'background-color': isDarkTheme
+          ? 'var(--dark-mode-project-info-hover-bg-color)'
+          : 'var(--light-mode-project-info-hover-bg-color)'
+      }"
     >
-      {{ project.name }}
-    </span>
-    <br />
-    <span
-      class="project-timeFrame"
-      [ngClass]="
-        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
-      "
-    >
-      {{ project.timeFrame }}
-    </span>
-    <span
-      class="project-desc"
-      [ngClass]="
-        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
-      "
-    >
-      {{ project.projectDesc }}
-    </span>
-    <app-link-logo />
+      <span
+        class="project-name"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-highlight-font-color'
+            : 'light-mode-highlight-font-color'
+        "
+      >
+        {{ project.name }}
+      </span>
+      <br />
+      <span
+        class="project-timeFrame project-timeFrame-hover"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-dull-font-color'
+            : 'light-mode-dull-font-color'
+        "
+        [ngStyle]="{
+          'boder-bottom-color': isDarkTheme ? '#D4DAF180' : '#000'
+        }"
+      >
+        {{ project.timeFrame }}
+      </span>
+      <br />
+      <span
+        class="project-desc-hover"
+        [ngClass]="
+          isDarkTheme
+            ? 'dark-mode-dull-font-color'
+            : 'light-mode-dull-font-color'
+        "
+      >
+        {{ project.projectDesc }}
+      </span>
+    </p>
   </div>
 </div>

@@ -1,8 +1,8 @@
 * {
   --dark-mode-modal-bright-font-color: #d5d5d8;
   --dark-mode-modal-light-font-color: #afafbf;
-  --light-mode-modal-bright-font-color: red;
-  --light-mode-modal-light-font-color: orange;
+  --light-mode-modal-bright-font-color: #171717;
+  --light-mode-modal-light-font-color: #767680;
 
   --dark-mode-modal-bg-color-1: #2c3a3c;
   --dark-mode-modal-bg-color-2: #2c2c2c;
@@ -58,7 +58,7 @@ mat-dialog-content::-webkit-scrollbar {
 
 .about-block p {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   text-align: right;
   padding: 20px;
 }
@@ -178,7 +178,7 @@ mat-dialog-content::-webkit-scrollbar {
 
 .little-about-me {
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .exp-pos {
@@ -188,7 +188,7 @@ mat-dialog-content::-webkit-scrollbar {
 
 .company-name {
   font-size: 0.8rem;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .exp-desc {

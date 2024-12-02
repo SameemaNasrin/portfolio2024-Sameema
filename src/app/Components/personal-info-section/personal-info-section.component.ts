@@ -97,11 +97,14 @@ export class AboutMeDialogContent implements OnInit {
   techStack: any;
   experienceInfo!: any;
 
-  constructor(public dialogRef: MatDialogRef<AboutMeDialogContent>) {}
+  constructor(public dialogRef: MatDialogRef<AboutMeDialogContent>, private readonly dataService: DataService) {}
 
   ngOnInit(): void {
     this.getTechStack();
     this.getExperienceInfo();
+    this.dataService.isDarkTheme$.subscribe((e) => {
+      this.isDarkTheme = e;
+    })
   }
 
   getTechStack() {
