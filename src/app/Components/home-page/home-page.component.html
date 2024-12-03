@@ -1,7 +1,27 @@
 <div
   class="home-container"
-  [ngClass]="isDarkTheme? 'home-container-dark-theme' : 'home-container-light-theme'"
+  [ngClass]="
+    isDarkTheme ? 'home-container-dark-theme' : 'home-container-light-theme'
+  "
 >
   <app-personal-info-section />
   <app-project-section />
+
+  <div class="copyright">
+    <span
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      Made with
+    </span>
+    <img src="assets/heart.svg" alt="heart" />
+    <span
+      [ngClass]="
+        isDarkTheme ? 'dark-mode-dull-font-color' : 'light-mode-dull-font-color'
+      "
+    >
+      &#64;2024</span
+    >
+  </div>
 </div>

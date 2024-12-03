@@ -49,7 +49,7 @@
 
 .project-card-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 0 3rem 1rem 3rem;
 }
 

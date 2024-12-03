@@ -1,6 +1,6 @@
 <div class="project-card-main">
-  <!-- (click)="openProjectDialog()" -->
   <div
+  (click)="openProjectLink(project.url)"
     class="project-card-container"
     [ngStyle]="{
       'background-image': isDarkTheme
@@ -19,7 +19,7 @@
           '-webkit-text-stroke-color': isDarkTheme ? '#D4DAF180' : '#000'
         }"
       >
-        {{ project.leftText }}
+        {{ project.leftText | uppercase }}
       </p>
       <p
         class="right-text"
@@ -27,7 +27,7 @@
           '-webkit-text-stroke-color': isDarkTheme ? '#D4DAF180' : '#000'
         }"
       >
-        {{ project.rightText }}
+        {{ project.rightText | uppercase}}
       </p>
     </div>
     <img [src]="project.logoImage" alt="logo-image" class="logo-image" />

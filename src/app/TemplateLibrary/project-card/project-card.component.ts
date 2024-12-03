@@ -15,12 +15,16 @@ export class ProjectCardComponent {
   isDarkTheme: boolean = true;
   @Input() project!: Project;
 
-  constructor(private readonly dataService: DataService){}
+  constructor(private readonly dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.isDarkTheme$.subscribe((e)=>{
+    this.dataService.isDarkTheme$.subscribe((e) => {
       this.isDarkTheme = e;
-    })
+    });
   }
 
+  openProjectLink(url:string) {
+    const projectLink = url; 
+    window.open(projectLink, '_blank');
+  }
 }

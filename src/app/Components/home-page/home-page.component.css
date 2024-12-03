@@ -1,3 +1,23 @@
+.dark-mode-highlight-font-color {
+  color: var(--dark-mode-highlight-font-color);
+}
+
+.dark-mode-dull-font-color {
+  color: var(--dark-mode-dull-font-color);
+}
+
+.light-mode-highlight-font-color {
+  color: var(--light-mode-highlight-font-color);
+}
+
+.light-mode-dull-font-color {
+  color: var(--light-mode-dull-font-color);
+}
+
+.light-mode-white-font-color {
+  color: var(--light-mode-white-font-color);
+}
+
 .home-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -17,9 +37,23 @@ app-personal-info-section {
   background-color: var(--light-mode-main-bg-color);
 }
 
+.copyright {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .home-container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .copyright span {
+    font-size: 0.8rem;
   }
 }

@@ -168,6 +168,7 @@ app-link-logo {
 .copyright {
   margin-top: 10px;
   text-align: center;
+  display: block;
 }
 
 .copyright span {
@@ -245,4 +246,10 @@ app-link-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .copyright {
+    display: none;
+  }
 }
